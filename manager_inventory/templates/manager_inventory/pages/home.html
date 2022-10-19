@@ -1,0 +1,42 @@
+{% load static %}
+{% include 'manager_inventory/partials/head.html' %}
+
+<body>
+    <div class="container-home">
+        <div class="container-nav">
+            <div class="itens-nav-header">
+                <a href="#"><h2>Manager Inventory</h2></a>
+            </div>
+            <div class="itens-nav-main">
+                <a href="">Inventário</a>
+                <a href="">Entradas</a>
+                <a href="">Saídas</a>
+            </div>
+            <div class="itens-nav-footer">
+                <a href=""><img src="{% static 'manager_inventory/img/user.png' %}"> Perfil</a>
+                <a href=""><img src="{% static 'manager_inventory/img/settings.png' %}"> Configurações</a>
+                <a href=""><img src="{% static 'manager_inventory/img/poder.png' %}"> Logout</a>
+            </div>
+        </div>
+
+        <div class="container-menu">
+            <div class="container-item-menu">
+                <div class="container-text-menu">
+                    <h3>Entradas</h3>
+                </div>
+            </div>
+            <div class="container-item-menu-2">
+                <div class="container-text-menu">
+                    <h2>Saídas</h2>
+                </div>
+            </div>
+            <div class="container-item-menu-3">
+                <div class="container-text-menu">
+                    <h2>Inventário</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
