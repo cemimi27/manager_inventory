@@ -2,35 +2,35 @@
 {% include 'manager_inventory/partials/head.html' %}
 
 <body>
-    <div class="container-home">
-        <div class="container-nav">
+    <div class="home-container">
+        <div class="nav-container">
             <div class="itens-nav-header">
                 <a href="#"><h2>Manager Inventory</h2></a>
             </div>
             <div class="itens-nav-main">
-                <a href="">Estoque</a>
-                <a href="">Pedidos</a>
+                <a href="{% url 'manager_inventory:estoque' %}">Estoque</a>
+                <a href="{% url 'manager_inventory:categoria' %}">Produtos</a>
                 <a href="">Vendas</a>
             </div>
             <div class="itens-nav-footer">
                 <a href=""><i class="fa-sharp fa-solid fa-circle-user"></i> Perfil</a>
                 <a href=""><i class="fa-sharp fa-solid fa-gear"></i> Configurações</a>
-                <a href=""><i class="fa-sharp fa-solid fa-right-from-bracket"></i> Logout</a>
+                <a href="{% url 'manager_inventory:index' %}"><i class="fa-sharp fa-solid fa-right-from-bracket"></i> Logout</a>
             </div>
         </div>
 
-        <div class="container-menu">
-            <a href="">
+        <div class="menu-container">
+            <a href="{% url 'manager_inventory:estoque' %}">
                 <div class="container-item-menu">
                     <div class="container-text-menu">
                         <h2>Estoque</h2>
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="{% url 'manager_inventory:categoria' %}">
                 <div class="container-item-menu-2">
                     <div class="container-text-menu">
-                        <h2>Pedidos</h2>
+                        <h2>Produtos</h2>
                     </div>
                 </div>
             </a>

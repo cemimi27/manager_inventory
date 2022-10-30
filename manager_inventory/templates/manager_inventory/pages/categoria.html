@@ -1,0 +1,51 @@
+{% include "manager_inventory/partials/head.html" %}
+
+<body>
+    <div class="header-container">
+        <div class="header-conteudo-container">
+            <h1 class="header-text">
+                Categorias
+            </h1>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="delete-update-insert">
+            <button class="btn-danger">Excluir Categoria</button>
+            <button class="btn-primary">Alterar Categoria</button>
+            <button class="btn-primary">Inserir Categoria</button>
+        </div>
+
+        <div class="cat-container">
+            <a href="">
+                <div class="cat-produto">
+                    <h1 class="text-cat-produto">Laticínios</h1>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="cat-produto">
+                    <h1 class="text-cat-produto">Padaria</h1>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="cat-produto">
+                    <h1 class="text-cat-produto">Açougue</h1>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="cat-produto">
+                    <h1 class="text-cat-produto">Mercearia</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-conteudo-container">
+            <a href="{% url 'manager_inventory:home' %}"><button class="btn-primary">Home</button></a>
+        </div>
+    </div>
+</body>
+</html>
